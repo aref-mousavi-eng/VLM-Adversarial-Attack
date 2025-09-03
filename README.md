@@ -11,7 +11,7 @@ This project demonstrates the vulnerability of Vision-Language Models (VLMs) und
 
 
 ## 🎯 Objective
-The goal is to apply adversarial perturbations to an image and feed it to the BLIP image-to-caption model, forcing the model to produce a specific, predetermined caption.
+The goal is to introduce adversarial perturbations into an image and feed it to the BLIP image-to-caption model, in order to force the model to generate a specified caption.
 
 
 ## 🛠️ Preparation
