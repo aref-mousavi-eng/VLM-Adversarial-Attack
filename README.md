@@ -1,43 +1,40 @@
-# Adversarial Vulnerability of Vision-Language Models (VLMs)
+# Exploring Adversarial Vulnerability of Vision-Language Models (VLMs)
 
 <p align="center">
   <img src="assets/thumbnail.jpg" alt="original and adversarial examples" style="max-width: 100%; height: auto;" />
-  <em>Original and adversarial examples generated with PGD (PSNR = 43.53 dB) and C&W (PSNR = 50.18 dB)</em>
+  <em>Original image vs. adversarial image generated using BLIP under PGD and C&W attacks</em>
   <br><br>
 </p>
 
 ## 🔍 Overview
 This project demonstrates the vulnerability of Vision-Language Models (VLMs) under adversarial attacks. Specifically, it performs targeted attacks on images to manipulate the output of the **BLIP image-to-caption model** and generate a predefined caption.
 
----
 
 ## 🎯 Objective
 The goal is to apply adversarial perturbations to an image and feed it to the BLIP image-to-caption model, forcing the model to produce a specific, predetermined caption.
 
----
 
 ## 🛠️ Preparation
 
-### 1. Create Conda Environment
+#### 1. Create Conda Environment
 ```bash
 conda create --name VLM python=3.8
 conda activate VLM
 ```
 
-### 2. Install PyTorch 1.13
+#### 2. Install PyTorch 1.13
 ```bash
 conda install pytorch==1.13.1 torchvision==0.14.1 torchaudio==0.13.1 pytorch-cuda=11.7 -c pytorch -c nvidia
 ```
 
-### 3. Install Dependencies
+#### 3. Install Dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4. Download Pretrained Weights
+#### 4. Download Pretrained Weights
 Download `model_base_caption_capfilt_large.pth` from here ([link](https://storage.googleapis.com/sfr-vision-language-research/BLIP/models/model_base_caption_capfilt_large.pth)) and place it in the `pretrained_weights` folder.
 
----
 
 ## 📝 Notebooks
 Please run the following Jupyter notebooks in order.
