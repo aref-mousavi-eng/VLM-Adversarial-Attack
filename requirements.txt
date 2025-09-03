@@ -1,0 +1,7 @@
+jupyter
+fairscale==0.4.4
+timm==0.4.12
+transformers==4.16.0
+pycocoevalcap
+charset-normalizer==3.2.0
+torchmetrics
