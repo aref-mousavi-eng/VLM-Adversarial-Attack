@@ -45,14 +45,14 @@ Please run the following Jupyter notebooks in order.
 * Reimplementing loss function
 
 2️⃣ [`Targeted FGSM (Linf).ipynb`](./2_Targeted%20FGSM%20(Linf).ipynb)
-* Implementing Targeted Fast Gradient Sign Method (FGSM) with L∞
+* Implementing Targeted Fast Gradient Sign Method (FGSM) with L∞ norm
 * Creating an adversarial example to change specific word in caption
 
 3️⃣ [`Targeted Momentum PGD (Linf).ipynb`](./3_Targeted%20Momentum%20PGD%20(Linf).ipynb)
-* Using Momentum Projected Gradient Descent (PGD) with L∞ to find perturbations that force the model to produce a target caption
+* Using Momentum Projected Gradient Descent (PGD) with L∞ norm to find perturbations that force the model to produce a target caption
 * Adding learning rate decay and random initialization to improve attack performance
 
 4️⃣ [`Targeted C&W (L2).ipynb`](./4_Targeted%20C&W%20(L2).ipynb)
-* Applying the Carlini & Wagner (C&W) attack with L2 to find the minimum perturbation
+* Applying the Carlini & Wagner (C&W) attack with L2 norm to find the minimum perturbation
 * Using hierarchical optimization by initializing C&W weights with PGD for faster convergence and improved performance
 * Comparing results between PGD and C&W attacks
