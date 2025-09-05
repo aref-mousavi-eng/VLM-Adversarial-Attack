@@ -60,3 +60,10 @@ Please run the following Jupyter notebooks in order.
 * Applying the Carlini & Wagner (C&W) attack with L2 norm to find the minimum perturbation
 * Using hierarchical optimization by initializing C&W weights with PGD for faster convergence and improved performance
 * Comparing the results and exploring the generalizability of these methods
+
+
+## 🔗 Resources
+1. [BLIP-pytorch](https://github.com/salesforce/BLIP)
+2. [FGSM-pytorch](https://github.com/Harry24k/FGSM-pytorch)
+3. [PGD-pytorch](https://github.com/Harry24k/PGD-pytorch)
+4. [CW-pytorch](https://github.com/Harry24k/CW-pytorch)
