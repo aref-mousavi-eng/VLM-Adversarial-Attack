@@ -13,6 +13,10 @@ This project demonstrates the vulnerability of Vision-Language Models (VLMs) und
 ## 🎯 Objective
 The goal is to introduce adversarial perturbations into an image and feed it to the BLIP image-to-caption model, in order to force the model to generate a specified caption.
 
+## 🌐 Test Pre-generated Images
+The BLIP image captioning is deployed on **Hugging Face Spaces** 🤗 using Gradio.   
+Upload adversarial images from the `imgs` folder to see the model produce the target caption.
+[BLIP Image Captioning (Base Model)](https://huggingface.co/spaces/aref-mousavi-eng/BLIP-Image-Captioning)
 
 ## 🛠️ Preparation
 
@@ -55,4 +59,4 @@ Please run the following Jupyter notebooks in order.
 4️⃣ [`Targeted C&W (L2).ipynb`](./4_Targeted%20C&W%20(L2).ipynb)
 * Applying the Carlini & Wagner (C&W) attack with L2 norm to find the minimum perturbation
 * Using hierarchical optimization by initializing C&W weights with PGD for faster convergence and improved performance
-* Comparing results between PGD and C&W attacks
+* Comparing the results and exploring the generalizability of these methods

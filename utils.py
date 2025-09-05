@@ -4,7 +4,6 @@ import matplotlib.pyplot as plt
 from PIL import Image
 from torchvision import transforms
 from torchvision.transforms.functional import InterpolationMode
-from tqdm import tqdm
 
 MEAN = torch.tensor((0.48145466, 0.4578275 , 0.40821073))
 STD  = torch.tensor((0.26862954, 0.26130258, 0.27577711))
@@ -96,3 +95,17 @@ def plot_loss(iters, loss, title):
     plt.ylabel('Loss')
     plt.grid(True)
     plt.show()
+
+
+# -----------------------------------------------------------------------------------------------
+def save_img(img_tensor, path):
+    img_tensor = img_tensor.squeeze(0).cpu()
+    img_np = img_tensor.numpy().transpose(1, 2, 0)  # out: (H, W, C)
+
+    out_of_range_count = np.sum((img_np < 0) | (1 < img_np))
+    img_np = np.clip(img_np, 0, 1)
+
+    img_pil = Image.fromarray((img_np * 255).astype('uint8'))
+    img_pil.save(path)
+
+    print(f"Image saved. Number of out of range data: {out_of_range_count}")
