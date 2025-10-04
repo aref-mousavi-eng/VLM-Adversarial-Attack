@@ -1,5 +1,7 @@
 # Exploring Adversarial Vulnerability of Vision-Language Models (VLMs)
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 <p align="center">
   <img src="assets/thumbnail.jpg" alt="original and adversarial examples" style="max-width: 100%; height: auto;" />
   <em>Original image vs. adversarial image generated using BLIP under PGD and C&W attacks</em>
