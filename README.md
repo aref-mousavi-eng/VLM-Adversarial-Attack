@@ -16,7 +16,7 @@ The goal is to introduce adversarial perturbations into an image and feed it to 
 ## 🌐 Test Pre-generated Images
 The BLIP image captioning is deployed on **Hugging Face Spaces** 🤗 using Gradio.   
 Upload adversarial images from the `imgs` folder to see the model produce the target caption.  
-[BLIP Image Captioning (Base Model)](https://huggingface.co/spaces/aref-mousavi-eng/BLIP-Image-Captioning)
+[BLIP Image Captioning (Base Model)](https://huggingface.co/spaces/arefmousavi/BLIP-Image-Captioning)
 
 ## 🛠️ Preparation
 
